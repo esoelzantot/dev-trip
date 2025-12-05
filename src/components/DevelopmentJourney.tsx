@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import {
   Search,
   Calendar,
@@ -10,44 +10,58 @@ import {
 
 import { skillsData, categories } from "../data/skillsData";
 
+// ========= Type Definitions =========
+type Category = "General" | "Frontend" | "Backend" | "Flutter" | "UI/UX";
+type Priority = "High" | "Medium" | "Low";
+
+interface Skill {
+  id: number;
+  title: string;
+  brief: string;
+  duration: string;
+  category: Category;
+  priority: Priority;
+  resources: { name: string; url: string }[];
+}
+
 export default function DevelopmentJourney() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const filteredSkills = useMemo(() => {
-    return skillsData.filter((skill) => {
+    return (skillsData as Skill[]).filter((skill) => {
       const matchesSearch =
         skill.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         skill.brief.toLowerCase().includes(searchTerm.toLowerCase());
+
       const matchesCategory =
         selectedCategory === "All" || skill.category === selectedCategory;
+
       return matchesSearch && matchesCategory;
     });
   }, [searchTerm, selectedCategory]);
 
-  const getCategoryColor = (category) => {
-    const colors = {
+  const getCategoryColor = (category: Category) => {
+    const colors: Record<Category, string> = {
       General: "bg-purple-500/20 text-purple-300 border-purple-500/50",
       Frontend: "bg-blue-500/20 text-blue-300 border-blue-500/50",
       Backend: "bg-green-500/20 text-green-300 border-green-500/50",
       Flutter: "bg-cyan-500/20 text-cyan-300 border-cyan-500/50",
       "UI/UX": "bg-pink-500/20 text-pink-300 border-pink-500/50",
     };
-    return (
-      colors[category] || "bg-slate-500/20 text-slate-300 border-slate-500/50"
-    );
+
+    return colors[category];
   };
 
-  const getPriorityColor = (priority) => {
-    const colors = {
+  const getPriorityColor = (priority: Priority) => {
+    const colors: Record<Priority, string> = {
       High: "bg-red-500/20 text-red-300 border-red-500/50",
       Medium: "bg-yellow-500/20 text-yellow-300 border-yellow-500/50",
       Low: "bg-green-500/20 text-green-300 border-green-500/50",
     };
-    return (
-      colors[priority] || "bg-slate-500/20 text-slate-300 border-slate-500/50"
-    );
+
+    return colors[priority];
   };
 
   return (
