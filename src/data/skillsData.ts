@@ -2,106 +2,60 @@
 export const skillsData = [
   {
     id: 1,
-    title: "React Advanced Patterns",
+    title: "Agile Methodology",
     brief:
-      "تعلم الـ Design Patterns المتقدمة في React مثل Compound Components, Render Props, و Higher Order Components",
-    duration: "2 weeks - 3 weeks",
-    category: "Frontend",
+      "منهجية Agile هي إطار عمل ديناميكي لإدارة المشاريع بيساعد الفرق إنها تشتغل بشكل أسرع، مرن، وتدريجي. الفكرة الأساسية إنها تقسّم المشروع لمراحل قصيرة قابلة للتطوير، مع تحسين مستمر وتعاون أكبر بين أفراد الفريق، وده بيسمح بالتكيّف السريع مع أي تغيّرات أو تحديات.",
+    duration: "3 days - 4 days",
+    category: "General",
     priority: "High",
     resources: [
-      { name: "React Docs", url: "https://react.dev" },
-      { name: "Patterns.dev", url: "https://patterns.dev" },
+      {
+        name: "Agile for Software Development",
+        url: "https://youtube.com/playlist?list=PLcdCk5ljWQ-p3t9E_vPcGzZMGLoAeRUO5&si=2U61ugsAdxR3OtNf",
+      },
+      {
+        name: "Agile Values",
+        url: "https://youtu.be/ZGI6ZNouduI?si=Xm7wZWwIBucFhT9w",
+      },
+      {
+        name: "Agile Principles",
+        url: "https://youtu.be/LmcjBHv-A1g?si=-KKp-ah9emyH1DET",
+      },
+      {
+        name: "Agile Docs (en)",
+        url: "https://asana.com/resources/agile-methodology",
+      },
+      {
+        name: "Agile Docs (ar)",
+        url: "https://bakkah.com/ar/knowledge-center/what-is-agile-methodology",
+      },
     ],
   },
   {
     id: 2,
-    title: "Node.js & Express API",
+    title: "Scrum Approach",
     brief:
-      "بناء RESTful APIs باستخدام Node.js و Express مع best practices و authentication",
-    duration: "3 weeks - 4 weeks",
-    category: "Backend",
-    priority: "High",
-    resources: [
-      { name: "Node.js Docs", url: "https://nodejs.org" },
-      { name: "Express Guide", url: "https://expressjs.com" },
-    ],
-  },
-  {
-    id: 3,
-    title: "Flutter State Management",
-    brief:
-      "فهم وإتقان state management في Flutter باستخدام Provider, Riverpod, و BLoC",
-    duration: "2 weeks - 3 weeks",
-    category: "Flutter",
-    priority: "Medium",
-    resources: [
-      { name: "Flutter Docs", url: "https://flutter.dev" },
-      { name: "Riverpod", url: "https://riverpod.dev" },
-    ],
-  },
-  {
-    id: 4,
-    title: "UI/UX Design Principles",
-    brief:
-      "تعلم أساسيات التصميم، Color Theory، Typography، و User Experience Design",
-    duration: "4 weeks - 6 weeks",
-    category: "UI/UX",
-    priority: "Medium",
-    resources: [
-      { name: "Figma Learn", url: "https://figma.com/learn" },
-      { name: "Laws of UX", url: "https://lawsofux.com" },
-    ],
-  },
-  {
-    id: 5,
-    title: "Git & GitHub Workflow",
-    brief:
-      "إتقان Git commands، branching strategies، و collaboration workflow على GitHub",
-    duration: "1 week - 2 weeks",
+      "Scrum هو إطار عمل مرن لإدارة المشاريع بيقسّم الشغل لدورات قصيرة اسمها Sprints، بحيث يقدر الفريق يحقق تقدم مستمر ويكيّف خطته بسرعة. بيعتمد على أدوار واضحة، اجتماعات ثابتة، وتعاون عالي بين أعضاء الفريق علشان يوصلوا لأفضل قيمة بأقل وقت.",
+    duration: "3 days - 4 days",
     category: "General",
     priority: "High",
     resources: [
-      { name: "Git Docs", url: "https://git-scm.com" },
-      { name: "GitHub Skills", url: "https://skills.github.com" },
-    ],
-  },
-  {
-    id: 6,
-    title: "TypeScript Deep Dive",
-    brief:
-      "فهم TypeScript بعمق: Generics, Utility Types, Advanced Types, و Type Guards",
-    duration: "2 weeks - 3 weeks",
-    category: "Frontend",
-    priority: "Medium",
-    resources: [
-      { name: "TypeScript Handbook", url: "https://typescriptlang.org" },
-      { name: "Type Challenges", url: "https://github.com/type-challenges" },
-    ],
-  },
-  {
-    id: 7,
-    title: "Database Design & SQL",
-    brief:
-      "تصميم قواعد البيانات، Normalization، Indexing، و كتابة Complex SQL Queries",
-    duration: "3 weeks - 4 weeks",
-    category: "Backend",
-    priority: "High",
-    resources: [
-      { name: "PostgreSQL Tutorial", url: "https://postgresql.org/docs" },
-      { name: "SQL Zoo", url: "https://sqlzoo.net" },
-    ],
-  },
-  {
-    id: 8,
-    title: "Problem Solving & DSA",
-    brief:
-      "حل المشاكل البرمجية و Data Structures and Algorithms لتحسين مهارات البرمجة",
-    duration: "6 weeks - 8 weeks",
-    category: "General",
-    priority: "Medium",
-    resources: [
-      { name: "LeetCode", url: "https://leetcode.com" },
-      { name: "NeetCode", url: "https://neetcode.io" },
+      {
+        name: "Scrum Approach",
+        url: "https://youtu.be/MHBXs-iIjrk?si=8XQaeqgLCnUO6sD2",
+      },
+      {
+        name: "Sprint Planning Meeting",
+        url: "https://youtu.be/-sBrSDs52a8?si=3o7fitFNPcBAlAdR",
+      },
+      {
+        name: "Scrum Docs (en)",
+        url: "https://asana.com/resources/what-is-scrum",
+      },
+      {
+        name: "Scrum Docs (ar)",
+        url: "https://bakkah.com/ar/knowledge-center/إطار-سكروم",
+      },
     ],
   },
 ];
