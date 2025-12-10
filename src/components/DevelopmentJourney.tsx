@@ -105,6 +105,12 @@ export default function DevelopmentJourney() {
               كل مهارة تتعلمها اليوم تصنع منك المطور الذي تحلم أن تكونه.
             </p>
 
+            <h6 className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 mb-4 sm:mb-6 pb-4">
+                HELP YOURSELF TO LEARN TOGETHER
+              </span>
+            </h6>
+
             <div className="flex items-center justify-center gap-2">
               <div className="h-1 w-12 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
               <Sparkles className="w-5 h-5 text-purple-400 animate-pulse" />
