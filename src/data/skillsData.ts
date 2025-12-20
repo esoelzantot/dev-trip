@@ -59,50 +59,42 @@ export const skillsData = [
     ],
   },
   {
-  id: 3,
-  title: "Git & GitHub",
-  brief: "إتقان Git و GitHub هو أساس العمل الجماعي في البرمجة. تعلم كيفية إدارة الإصدارات، التعاون مع الفرق، استخدام Branching Models المختلفة، وكتابة Commit Messages احترافية. هذه المهارة ضرورية لأي مطور يريد العمل في بيئة احترافية.",
-  duration: "6 days - 7 days",
-  category: "General",
-  priority: "High",
-  resources: [
-    {
-      name: "Git & GitHub Main Course",
-      url: "https://youtube.com/playlist?list=PLXsBti0EwQ6yLQldACw0V5fIpgsyPg539&si=dDLQK1SiPcQIG183",
-    },
-    {
-      name: "Workflows Course",
-      url: "https://youtube.com/playlist?list=PLLPFV3qOMCODH9355V-WCUB-EFx0aX3Y3&si=8PjJYKKQChnj5z3X",
-    },
-    {
-      name: "Git Flow 1",
-      url: "https://youtu.be/Rtn_8um-GFc?si=v8MlCuQv_RsJDvGd",
-    },
-    {
-      name: "Git Flow 2",
-      url: "https://youtu.be/7OTrHx56GfE?si=mt-rU7cL67e_MAiU",
-    },
-    {
-      name: "Git Commit Writing",
-      url: "https://youtu.be/XMqPHAq4xkQ?si=qb87H_B9xZRbJ-MU",
-    },
-    {
-      name: "Git branching model Docs",
-      url: "https://nvie.com/posts/a-successful-git-branching-model/",
-    },
-    {
-      name: "Writing Meaningful Git Commit Docs",
-      url: "https://medium.com/@iambonitheuri/the-art-of-writing-meaningful-git-commit-messages-a56887a4cb49",
-    },
-  ],
-}
-];
-
-export const categories = [
-  "All",
-  "General",
-  "Frontend",
-  "Backend",
-  "Flutter",
-  "UI/UX",
+    id: 3,
+    title: "Git & GitHub",
+    brief:
+      "إتقان Git و GitHub هو أساس العمل الجماعي في البرمجة. تعلم كيفية إدارة الإصدارات، التعاون مع الفرق، استخدام Branching Models المختلفة، وكتابة Commit Messages احترافية. هذه المهارة ضرورية لأي مطور يريد العمل في بيئة احترافية.",
+    duration: "6 days - 7 days",
+    category: "General",
+    priority: "High",
+    resources: [
+      {
+        name: "Git & GitHub Main Course",
+        url: "https://youtube.com/playlist?list=PLXsBti0EwQ6yLQldACw0V5fIpgsyPg539&si=dDLQK1SiPcQIG183",
+      },
+      {
+        name: "Workflows Course",
+        url: "https://youtube.com/playlist?list=PLLPFV3qOMCODH9355V-WCUB-EFx0aX3Y3&si=8PjJYKKQChnj5z3X",
+      },
+      {
+        name: "Git Flow 1",
+        url: "https://youtu.be/Rtn_8um-GFc?si=v8MlCuQv_RsJDvGd",
+      },
+      {
+        name: "Git Flow 2",
+        url: "https://youtu.be/7OTrHx56GfE?si=mt-rU7cL67e_MAiU",
+      },
+      {
+        name: "Git Commit Writing",
+        url: "https://youtu.be/XMqPHAq4xkQ?si=qb87H_B9xZRbJ-MU",
+      },
+      {
+        name: "Git branching model Docs",
+        url: "https://nvie.com/posts/a-successful-git-branching-model/",
+      },
+      {
+        name: "Writing Meaningful Git Commit Docs",
+        url: "https://medium.com/@iambonitheuri/the-art-of-writing-meaningful-git-commit-messages-a56887a4cb49",
+      },
+    ],
+  },
 ];
