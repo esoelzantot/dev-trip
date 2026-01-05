@@ -211,6 +211,11 @@ export default function TasksPage() {
                   {task.duration}
                 </div>
 
+                <div className="flex items-center gap-2 mb-4 text-sm text-slate-300">
+                  <Calendar className="w-4 h-4 text-purple-400" />
+                  {task.deadline}
+                </div>
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {task.neededSkills.map((skill) => (
                     <span
